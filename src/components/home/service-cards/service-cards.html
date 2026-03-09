@@ -1,0 +1,25 @@
+<div>
+  <h1 class="text-center fw-bold">Our Services</h1>
+  <div class="container mb-5 mt-3">
+    <div class="row">
+      @for (card of cards; track $index) {
+        <div class="col-4">
+          <div class="card p-3 bg-secondary-subtle gap-3 justify-content-between" style="height: 500px;">
+            <div class="circle mx-auto">
+              <div class="inner-circle">
+                <i style="font-size: 60px" class="{{ card.icon }}"></i>
+              </div>
+            </div>
+            <h3 class="text-center m-3">{{ card.title }}</h3>
+            <p class="text-center">
+              {{ card.description }}
+            </p>
+            <div class="mybtn shadow mx-auto">
+                <i class="bi bi-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
