@@ -1,0 +1,22 @@
+<div>
+  <h1 class="text-center fw-bold">Industries We Serve</h1>
+  <p class="text-center text-secondary w-75 mx-auto p-3">
+    At DArch Tech, we work with businesses across all industries, delivering scalable digital solutions that meet unique business challenges and customer needs.
+  </p>
+  <div class="container m-5 mt-2">
+    <div class="row">
+      @for (ind of industries; track $index) {
+        <div class="col-3">
+          <div class="m-2">
+            <div class="text-center">
+                <i style="font-size: 30px" class="{{ ind.icon }}"></i>
+            </div>
+            <div class="text-center text-danger fw-bold">
+                {{ind.title}}
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,126 @@
+<div class="container my-5">
+  <h1 class="text-center my-5">Our Best Pricing</h1>
+  <div class="row justify-content-center">
+    <div
+      class="col-4 p-1 border border-1 border-secondary text-uppercase fw-bold text-danger text-center p-3"
+      style="font-size: 12px"
+    ></div>
+    <div
+      class="col-2 p-1 border border-1 border-secondary text-uppercase fw-bold text-danger text-center p-3"
+      style="font-size: 12px"
+    >
+      Beginner
+    </div>
+    <div
+      class="col-2 p-1 border border-1 border-secondary text-uppercase fw-bold text-danger text-center p-3"
+      style="font-size: 12px"
+    >
+      Professional
+    </div>
+    <div
+      class="col-2 p-1 border border-1 border-secondary text-uppercase fw-bold text-danger text-center p-3"
+      style="font-size: 12px"
+    >
+      Primium
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div
+      class="col-4 p-1 border bg-body-tertiary border-1 border-secondary text-uppercase fw-bold text-danger p-3 pt-4"
+      style="font-size: 12px"
+    >
+      Plan
+    </div>
+    <div
+      class="col-2 p-1 border bg-body-tertiary border-1 border-secondary text-uppercase fw-bold fs-5 text-center p-3"
+    >
+      Rs. 9999/-
+    </div>
+    <div
+      class="col-2 p-1 border bg-body-tertiary border-1 border-secondary text-uppercase fw-bold fs-5 text-center p-3"
+    >
+      Rs. 15k - 20k
+    </div>
+    <div
+      class="col-2 p-1 border bg-body-tertiary border-1 border-secondary text-uppercase fw-bold fs-5 text-center p-3"
+    >
+      Rs. 45k+
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div
+      class="col-4 p-1 bg-body-tertiary border-start border-end border-secondary fw-bold text-secondary ps-3"
+      style="font-size: 12px"
+    ></div>
+    <div
+      class="col-2 p-1 bg-body-tertiary border-start border-end border-secondary fw-bold text-center"
+      style="font-size: 12px"
+    ></div>
+    <div
+      class="col-2 p-1 bg-body-tertiary border-start border-end border-secondary fw-bold text-center"
+      style="font-size: 12px"
+    ></div>
+    <div
+      class="col-2 p-1 bg-body-tertiary border-start border-end border-secondary fw-bold text-center"
+      style="font-size: 12px"
+    ></div>
+  </div>
+  <div class="row justify-content-center">
+    @for (service of services; track $index) {
+      <div
+        class="col-4 p-1 bg-body-tertiary border-start border-end border-secondary text-secondary ps-3"
+        style="font-size: 12px"
+      >
+        {{ service.service }}
+      </div>
+      <div
+        class="col-2 p-1 bg-body-tertiary border-start border-end border-secondary fw-bold text-center"
+        style="font-size: 12px"
+      >
+        @if (service.beginner) {
+          <span class="text-success">✓</span>
+        } @else {
+          <span class="text-danger">✕</span>
+        }
+      </div>
+      <div
+        class="col-2 p-1 bg-body-tertiary border-start border-end border-secondary fw-bold text-center"
+        style="font-size: 12px"
+      >
+        @if (service.professional) {
+          <span class="text-success">✓</span>
+        } @else {
+          <span class="text-danger">✕</span>
+        }
+      </div>
+      <div
+        class="col-2 p-1 bg-body-tertiary border-start border-end border-secondary fw-bold text-center"
+        style="font-size: 12px"
+      >
+        @if (service.premium) {
+          <span class="text-success">✓</span>
+        } @else {
+          <span class="text-danger">✕</span>
+        }
+      </div>
+    }
+  </div>
+  <div class="row justify-content-center">
+    <div
+      class="col-4 p-1 bg-body-tertiary border-start border-end border-bottom border-secondary fw-bold text-secondary ps-3"
+      style="font-size: 12px"
+    ></div>
+    <div
+      class="col-2 p-1 bg-body-tertiary border-start border-end border-bottom border-secondary fw-bold text-center"
+      style="font-size: 12px"
+    ></div>
+    <div
+      class="col-2 p-1 bg-body-tertiary border-start border-end border-bottom border-secondary fw-bold text-center"
+      style="font-size: 12px"
+    ></div>
+    <div
+      class="col-2 p-1 bg-body-tertiary border-start border-end border-bottom border-secondary fw-bold text-center"
+      style="font-size: 12px"
+    ></div>
+  </div>
+</div>
