@@ -3,10 +3,11 @@ import { Banner } from '../../components/common/banner/banner';
 import { ServiceCards } from '../../components/home/service-cards/service-cards';
 import { Industries } from '../../components/home/industries/industries';
 import { PriceTable } from '../../components/home/price-table/price-table';
+import { Counter } from '../../components/home/counter/counter';
 
 @Component({
   selector: 'app-home-page',
-  imports: [Banner, ServiceCards, Industries, PriceTable],
+  imports: [Banner, ServiceCards, Industries, PriceTable, Counter],
   templateUrl: './home-page.html',
   styleUrl: './home-page.css',
 })
